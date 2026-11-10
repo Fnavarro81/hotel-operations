@@ -7,6 +7,14 @@ public class Reservation {
     private boolean weekend;
     private double reservationTotal;
 
+    public Reservation(String roomType, double price, int numberOfNights, boolean weekend, double reservationTotal) {
+        this.roomType = roomType;
+        this.price = price;
+        this.numberOfNights = numberOfNights;
+        this.weekend = weekend;
+        this.reservationTotal = reservationTotal;
+    }
+
     public String getRoomType() {
         return roomType;
     }
@@ -38,4 +46,5 @@ public class Reservation {
     public double getReservationTotal() {
         return reservationTotal;
     }
+
 }
