@@ -24,5 +24,15 @@ public class App {
         employee1.punchOut(14);
 
         System.out.println(employee1.getHoursWorked());
+
+        Hotel hotel = new Hotel("lakeside Inn", 2, 10);
+
+        boolean booking1 = hotel.bookRoom(2, true);
+        System.out.println(booking1);
+
+        boolean booking2 = hotel.bookRoom(1, true);
+        System.out.println(booking2);
+
+        System.out.println(hotel.getAvailableSuites());
     }
 }
